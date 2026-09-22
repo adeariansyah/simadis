@@ -7,14 +7,13 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #fbfbfb;
-  color: #333333;
+  background-color: #E8F6EE;
+  color: #1F2937;
 }
 
 /* Header & Navigasi */
 header {
-  /* background-color: #009b4b; */
-  background-color: #25a36f;
+  background-color: #176B45;
   padding: 1rem 2rem;
 }
 
@@ -29,7 +28,7 @@ nav {
 .brand {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #feef00;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
@@ -40,21 +39,27 @@ nav ul {
 }
 
 nav ul li a {
-  color: #fbfbfb;
+  color: #FFFFFF;
   text-decoration: none;
   font-size: 0.95rem;
 }
 
 nav ul li a:hover {
-  color: #feef00;
+  color: #F2C94C;
 }
 
 nav ul li #daftar {
-  background-color: #feef00;
+  background-color: #F2C94C;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 10px 16px;
   border-radius: 10px;
-  color: #333333;
+  color: #0F5132;
+  font-weight: bold;
+}
+
+nav ul li #daftar:hover {
+  background-color: #E5B93D;
+  color: #0F5132;
 }
 
 /* Konten Utama */
@@ -65,34 +70,34 @@ main {
 }
 
 section {
-  background-color: #ffffff;
-  border: 1px solid #c6d3cc;
-  border-radius: 6px;
+  background-color: #FFFFFF;
+  border: 1px solid #D5E8DD;
+  border-radius: 10px;
   padding: 1.5rem;
   margin-bottom: 2rem;
 }
 
 /* Tipografi */
 h1 {
-  color: #25a36f;
+  color: #176B45;
   font-size: 1.8rem;
   margin-bottom: 0.75rem;
 }
 
 h2 {
-  color: #25a36f;
+  color: #176B45;
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
 }
 
 h3 {
-  color: #555555;
+  color: #0F5132;
   font-size: 1.1rem;
   margin-bottom: 1rem;
 }
 
 p {
-  color: #444444;
+  color: #374151;
 }
 
 /* Daftar Fitur */
@@ -115,41 +120,41 @@ table {
 
 th,
 td {
-  border: 1px solid #c6d3cc;
+  border: 1px solid #D5E8DD;
   padding: 0.75rem;
   text-align: left;
 }
 
 th {
-  background-color: #25a36f;
-  color: #fbfbfb;
+  background-color: #176B45;
+  color: #FFFFFF;
   text-align: center;
 }
 
 /* Baris sub-header tabel */
 thead tr:last-child th {
-  background-color: #c6d3cc;
-  color: #333333;
+  background-color: #E8F6EE;
+  color: #0F5132;
 }
 
 tbody tr:nth-child(even) {
-  background-color: #fbfbfb;
+  background-color: #F8FAF9;
 }
 
 tbody tr:hover {
-  background-color: #f1f5f3;
+  background-color: #E8F6EE;
 }
 
 /* Footer */
 footer {
-  background-color: #25a36f;
-  color: #fbfbfb;
+  background-color: #0F5132;
+  color: #FFFFFF;
   padding: 2rem 1.5rem;
-  border-top: 4px solid #feef00;
+  border-top: 4px solid #F2C94C;
 }
 
 footer h3 {
-  color: #feef00;
+  color: #F2C94C;
   max-width: 1100px;
   margin: 0 auto 0.75rem auto;
 }
