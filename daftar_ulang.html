@@ -50,26 +50,26 @@
             <h2>Identitas Siswa</h2>
 
             <label for="nisn">NISN:</label>
-            <input type="text" id="nisn" name="nisn" />
+            <P><input type="text" id="nisn" name="nisn" /></P>
 
             <label for="nik">NIK:</label>
-            <input type="text" id="nik" name="nik" />
+            <p><input type="text" id="nik" name="nik" /></p>
 
             <label for="nis_madrasah">NIS Madrasah:</label>
-            <input type="text" id="nis_madrasah" name="nis_madrasah" />
+            <p><input type="text" id="nis_madrasah" name="nis_madrasah" /></p>
           </div>
 
           <!-- A -->
           <div class="form-section">
             <h2>A. KETERANGAN DIRI MURID</h2>
 
-            <label for="nama_lengkap">1a. Nama Lengkap:</label>
+           <p><label for="nama_lengkap"><p>1. Nama Siswa</p>a. Nama Lengkap:</label></p>
             <input type="text" id="nama_lengkap" name="nama_lengkap" />
 
-            <label for="nama_panggilan">1b. Nama Panggilan:</label>
+            <P><label for="nama_panggilan">1b. Nama Panggilan:</label></P>
             <input type="text" id="nama_panggilan" name="nama_panggilan" />
 
-            <label>2. Jenis Kelamin:</label>
+            <p><label>2. Jenis Kelamin:</label></p>
             <div class="radio-group">
               <label>
                 <input type="radio" name="jenis_kelamin" value="Laki-laki" />
@@ -83,13 +83,17 @@
             </div>
 
             <label for="tempat_tanggal_lahir">
-              3. Tempat, Tanggal Lahir:
+              3. Tempat Lahir:
             </label>
             <input
               type="text"
               id="tempat_tanggal_lahir"
               name="tempat_tanggal_lahir"
-            />
+              required
+            /><br /><br />
+
+            <label for="tglLahir">Tanggal Lahir:</label>
+            <input type="date" name="tglLahir" id="tglLahir" /><br /><br />
 
             <label for="agama">4. Agama:</label>
             <select id="agama" name="agama">
