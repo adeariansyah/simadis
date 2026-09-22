@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pendaftaran</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="brand">SIMADIS</div>
+        <ul>
+          <li>
+            <a href="index.html">Beranda</a>
+          </li>
+          <li>
+            <a href="daftar.html">Pendaftaran</a>
+          </li>
+          <li>
+            <a href="pengumuman.html">Pengumuman</a>
+          </li>
+          <li>
+            <a href="#">Daftar Ulang</a>
+          </li>
+          <li>
+            <a href="#">Kontak</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="head-form">
+          <h1>Formulir Pendaftaran MTs Plus AL-Jawami Cilacap</h1>
+        </div>
+        <form action="/submit_daftar.html" method="post">
+          <label for="no_daftar">Nomor Pendaftaran:</label>
+          <input
+            type="number"
+            id="no_daftar"
+            name="no_daftar"
+            required
+            min="1"
+          />
+          <br /><br />
+
+          <label for="nama">Nama Lengkap:</label>
+          <input type="text" id="nama" name="nama" required /><br /><br />
+
+          <label for="jk">Jenis Kelamin:</label>
+          <input type="radio" name="jk" id="jk" value="Laki-laki" />
+          <label for="jk">Laki-laki</label>
+          <input type="radio" name="jk" id="jk" value="Perempuan" />
+          <label for="jk">Perempuan</label><br />
+
+          <label for="tmpLahir">Tempat Lahir:</label>
+          <input
+            type="text"
+            id="tmpLahir"
+            name="tmpLahir"
+            required
+          /><br /><br />
+
+          <label for="tglLahir">Tanggal Lahir:</label>
+          <input type="date" name="tglLahir" id="tglLahir" /><br /><br />
+
+          <label for="agama">Pilih Agama:</label>
+          <select id="agama" name="agama" required>
+            <option value="" disabled selected>-- Pilih Agama Anda --</option>
+            <option value="islam">Islam</option>
+            <option value="kristen">Kristen</option>
+            <option value="katolik">Katolik</option>
+            <option value="hindu">Hindu</option>
+            <option value="buddha">Buddha</option>
+            <option value="khonghucu">Khonghucu</option></select
+          ><br />
+          <label for="alamat">Alamat:</label>
+          <textarea
+            name="alamat"
+            id="alamat"
+            placeholder="Masukkan alamat..."
+            rows="4"
+            cols="30"
+            required
+          ></textarea>
+          <br /><br />
+          <hr />
+          <div>
+            <h2>Data Orang Tua Siswa</h2>
+            <label for="namaAyah">Nama Ayah:</label>
+            <input
+              type="text"
+              id="namaAyah"
+              name="namaAyah"
+              required
+            /><br /><br />
+
+            <label for="tmpLahirAyah">Tempat Lahir:</label>
+            <input
+              type="text"
+              id="tmpLahirAyah"
+              name="tmpLahirAyah"
+              required
+            /><br /><br />
+
+            <label for="tglLahirAyah">Tanggal Lahir:</label>
+            <input
+              type="date"
+              name="tglLahirAyah"
+              id="tglLahirAyah"
+            /><br /><br />
+
+            <label for="pkj">Pekerjaan:</label>
+            <input type="text" id="pkj" name="pkj" required /><br /><br />
+            <label for="noHp">No. Hp:</label>
+            <input type="text" name="noHp" id="noHp" max="15" /><br /><br />
+
+            <label for="alamat">Alamat:</label>
+            <textarea
+              name="alamat"
+              id="alamat"
+              placeholder="Masukkan alamat..."
+              rows="4"
+              cols="30"
+              required
+            ></textarea>
+            <br /><br />
+            <label for="namaIbu">Nama Ibu:</label>
+            <input
+              type="text"
+              id="namaIbu"
+              name="namaIbu"
+              required
+            /><br /><br />
+
+            <label for="tmpLahirIbu">Tempat Lahir:</label>
+            <input
+              type="text"
+              id="tmpLahirIbu"
+              name="tmpLahirIbu"
+              required
+            /><br /><br />
+
+            <label for="tglLahirIbu">Tanggal Lahir:</label>
+            <input
+              type="date"
+              name="tglLahirIbu"
+              id="tglLahirIbu"
+            /><br /><br />
+
+            <label for="pkj">Pekerjaan:</label>
+            <input type="text" id="pkj" name="pkj" required /><br /><br />
+            <label for="noHp">No. Hp:</label>
+            <input type="text" name="noHp" id="noHp" max="15" /><br /><br />
+
+            <label for="alamat">Alamat:</label>
+            <textarea
+              name="alamat"
+              id="alamat"
+              placeholder="Masukkan alamat..."
+              rows="4"
+              cols="30"
+              required
+            ></textarea>
+            <br /><br />
+          </div>
+          <button type="submit">Daftar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <h3 id="kontak">Informasi Madrasah</h3>
+      <ul>
+        <li>
+          Jl. Kendal II, Tritih Kulon, Kec. Cilacap Utara, Kabupaten Cilacap
+        </li>
+        <li>aljawamidigital@gmail.com</li>
+        <li>081331211114</li>
+      </ul>
+    </footer>
+  </body>
+</html>
