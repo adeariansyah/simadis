@@ -48,124 +48,169 @@
           <!-- IDENTITAS AWAL -->
           <div class="form-section">
             <h2>Identitas Siswa</h2>
-
-            <label for="nisn">NISN:</label>
-            <P><input type="text" id="nisn" name="nisn" /></P>
-
-            <label for="nik">NIK:</label>
-            <p><input type="text" id="nik" name="nik" /></p>
-
-            <label for="nis_madrasah">NIS Madrasah:</label>
-            <p><input type="text" id="nis_madrasah" name="nis_madrasah" /></p>
-          </div>
-
-          <!-- A -->
-          <div class="form-section">
-            <h2>A. KETERANGAN DIRI MURID</h2>
-
-           <p><label for="nama_lengkap"><p>1. Nama Siswa</p>a. Nama Lengkap:</label></p>
-            <input type="text" id="nama_lengkap" name="nama_lengkap" />
-
-            <P><label for="nama_panggilan">1b. Nama Panggilan:</label></P>
-            <input type="text" id="nama_panggilan" name="nama_panggilan" />
-
-            <p><label>2. Jenis Kelamin:</label></p>
-            <div class="radio-group">
-              <label>
-                <input type="radio" name="jenis_kelamin" value="Laki-laki" />
-                Laki-laki
-              </label>
-
-              <label>
-                <input type="radio" name="jenis_kelamin" value="Perempuan" />
-                Perempuan
-              </label>
+  
+            <!-- Baris NISN -->
+            <div style="display: flex; align-items: center; margin-bottom: 8px;">
+              <label for="nisn" style="width: 120px;">NISN:</label>
+              <input type="text" id="nisn" name="nisn" />
             </div>
 
-            <label for="tempat_tanggal_lahir">
-              3. Tempat Lahir:
-            </label>
-            <input
-              type="text"
-              id="tempat_tanggal_lahir"
-              name="tempat_tanggal_lahir"
-              required
-            /><br /><br />
+            <!-- Baris NIK -->
+            <div style="display: flex; align-items: center; margin-bottom: 8px;">
+              <label for="nik" style="width: 120px;">NIK:</label>
+              <input type="text" id="nik" name="nik" />
+            </div>
 
-            <label for="tglLahir">Tanggal Lahir:</label>
-            <input type="date" name="tglLahir" id="tglLahir" /><br /><br />
+            <!-- Baris NIS Madrasah -->
+            <div style="display: flex; align-items: center; margin-bottom: 8px;">
+              <label for="nis_madrasah" style="width: 120px;">NIS Madrasah:</label>
+              <input type="text" id="nis_madrasah" name="nis_madrasah" />
+            </div>
+  
+        </div>
 
-            <label for="agama">4. Agama:</label>
-            <select id="agama" name="agama">
-              <option value="">-- Pilih Agama --</option>
-              <option value="Islam">Islam</option>
-              <option value="Kristen">Kristen</option>
-              <option value="Katolik">Katolik</option>
-              <option value="Hindu">Hindu</option>
-              <option value="Buddha">Buddha</option>
-              <option value="Khonghucu">Khonghucu</option>
-            </select>
+            <!-- A -->
+            <div class="form-section">
+              <h2>A. KETERANGAN DIRI MURID</h2>
+              
+              <p>1. Nama Siswa</p>
+              <div style="margin-left: 20px;">
 
-            <label for="kewarganegaraan">5. Kewarganegaraan:</label>
-            <input
-              type="text"
-              id="kewarganegaraan"
-              name="kewarganegaraan"
-            />
+                <!-- a. Nama Lengkap -->
+                <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                  <label for="nama_lengkap" style="display: inline-block; width: 205px;">a. Nama Lengkap:</label>
+                  <input type="text" id="nama_lengkap" name="nama_lengkap">
+                </div>
 
-            <label for="anak_ke">6. Anak Ke:</label>
-            <input type="number" id="anak_ke" name="anak_ke" min="1" />
+                <!-- b. Nama Panggilan -->
+                <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                  <label for="nama_panggilan" style="display: inline-block; width: 205px;">b. Nama Panggilan:</label>
+                  <input type="text" id="nama_panggilan" name="nama_panggilan">
+                </div>
 
-            <label for="saudara_kandung">7. Jumlah Saudara Kandung:</label>
-            <input
-              type="number"
-              id="saudara_kandung"
-              name="saudara_kandung"
-              min="0"
-            />
+              </div>
 
-            <label for="saudara_tiri">8. Jumlah Saudara Tiri:</label>
-            <input
-              type="number"
-              id="saudara_tiri"
-              name="saudara_tiri"
-              min="0"
-            />
+              <!-- 2. Jenis Kelamin -->
+              <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                <label style="display: inline-block; width: 225px;">2. Jenis Kelamin:</label>
+                <div class="radio-group" style="display: flex; gap: 15px;">
+                  <label>
+                    <input type="radio" name="jenis_kelamin" value="Laki-laki" />
+                    Laki-laki
+                  </label>
+                  <label>
+                    <input type="radio" name="jenis_kelamin" value="Perempuan" />
+                    Perempuan
+                  </label>
+                </div>
+              </div>
 
-            <label for="saudara_angkat">9. Jumlah Saudara Angkat:</label>
-            <input
-              type="number"
-              id="saudara_angkat"
-              name="saudara_angkat"
-              min="0"
-            />
+              <!-- 3. Tempat Lahir -->
+              <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                <label for="tempat_lahir" style="display: inline-block; width: 225px;">3. Tempat Lahir:</label>
+                <input type="text" id="tempat_lahir" name="tempat_lahir" required />
+              </div>
 
-            <label for="status_yatim">
-              10. Anak Yatim/Yatim Piatu:
-            </label>
-            <select id="status_yatim" name="status_yatim">
-              <option value="">-- Pilih --</option>
-              <option value="Tidak">Tidak</option>
-              <option value="Yatim">Yatim</option>
-              <option value="Yatim Piatu">Yatim Piatu</option>
-            </select>
+              <!-- 4. Tanggal Lahir -->
+              <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                <label for="tglLahir" style="display: inline-block; width: 225px;">4. Tanggal Lahir:</label>
+                <input type="date" name="tglLahir" id="tglLahir" />
+              </div>
 
-            <label for="bahasa">
-              11. Bahasa Sehari-hari di Rumah:
-            </label>
-            <input type="text" id="bahasa" name="bahasa" />
+            </div>
+              <!-- 5. Agama -->
+              <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                <label for="agama" style="display: inline-block; width: 225px;">5. Agama:</label>
+                <select id="agama" name="agama">
+                  <option value="">-- Pilih Agama --</option>
+                  <option value="Islam">Islam</option>
+                  <option value="Kristen">Kristen</option>
+                  <option value="Katolik">Katolik</option>
+                  <option value="Hindu">Hindu</option>
+                  <option value="Buddha">Buddha</option>
+                  <option value="Khonghucu">Khonghucu</option>
+                </select>
+              </div>
+              <!-- 6. kewarganegaraan -->
+              <div>
+              <label for="kewarganegaraan" style="display: inline-block; width: 220px;">6. Kewarganegaraan:</label>
+                <input
+                  type="text"
+                  id="kewarganegaraan"
+                  name="kewarganegaraan"
+                />
+              </div>
+
+              <!-- 7. Anak ke berapa nih -->
+              <div>
+                <label for="anak_ke" style="display: inline-block; width: 220px;">7. Anak Ke:</label>
+                <input type="number" id="anak_ke" name="anak_ke" min="1" />
+              </div>
+            
+              <!-- 8. Jumlah Saudara Kandung -->
+              <div>
+                <label for="saudara_kandung" style="display: inline-block; width: 220px;">8. Jumlah Saudara Kandung:</label>
+                <input
+                  type="number"
+                  id="saudara_kandung"
+                  name="saudara_kandung"
+                  min="0"
+                />
+              </div>
+            
+              <!-- 9. Jumlah Saudara Tiri -->
+              <div>
+                <label for="saudara_tiri" style="display: inline-block; width: 220px;">9. Jumlah Saudara Tiri:</label>
+                <input
+                  type="number"
+                  id="saudara_tiri"
+                  name="saudara_tiri"
+                  min="0"
+                />
+              </div>
+
+              <!-- 10. Jumlah Saudara Angkat-->
+              <div>
+                <label for="saudara_angkat" style="display: inline-block; width: 220px;">10. Jumlah Saudara Angkat:</label>
+                <input
+                  type="number"
+                  id="saudara_angkat"
+                  name="saudara_angkat"
+                  min="0"
+                />
+              </div>
+
+              <!-- 11. Status Yatim/Piatu -->
+              <div>
+                <label for="status_yatim" style="display: inline-block; width: 220px;">11. Anak Yatim/Yatim Piatu:</label>
+                <select id="status_yatim" name="status_yatim">
+                  <option value="">-- Pilih --</option>
+                  <option value="Tidak">Tidak</option>
+                  <option value="Yatim">Yatim</option>
+                  <option value="Yatim Piatu">Yatim Piatu</option>
+                </select>
+              </div>
+              
+              <!--12. Bahasa Sehari -->
+              <div>
+                <label for="bahasa" style="display: inline-block; width: 220px;">12. Bahasa Sehari-hari di Rumah:</label>
+                <input type="text" id="bahasa" name="bahasa" />
+              </div>
           </div>
 
           <!-- B -->
           <div class="form-section">
             <h2>B. KETERANGAN TEMPAT TINGGAL</h2>
 
-            <label for="alamat_tinggal">12. Alamat:</label>
-            <textarea
-              id="alamat_tinggal"
-              name="alamat_tinggal"
-              rows="4"
-            ></textarea>
+            <!--1. Alamat Rumah/Domisili-->
+            <div>
+              <label for="alamat_tinggal" style="display: inline-block; width: 220px;">1. Alamat:</label>
+              <textarea
+                id="alamat_tinggal"
+                name="alamat_tinggal"
+                rows="4"
+              ></textarea>
+            </div>
 
             <label for="telepon">13. Nomor Telpon:</label>
             <input type="text" id="telepon" name="telepon" />
