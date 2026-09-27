@@ -12,7 +12,7 @@
         <div class="brand">SIMADIS</div>
         <ul>
           <li><a href="index.html">Beranda</a></li>
-          <li><a href="daftar.html">Pendaftaran</a></li>
+          <li><a href="daftar.html" id="daftar">Pendaftaran</a></li>
           <li><a href="pengumuman.html">Pengumuman</a></li>
           <li><a href="#">Daftar Ulang</a></li>
           <li><a href="#">Kontak</a></li>
@@ -20,229 +20,350 @@
       </nav>
     </header>
     <main>
-      <section>
+      <section class="form-container">
         <div class="head-form">
           <h1>Formulir Pendaftaran MTs Plus AL-Jawami Cilacap</h1>
         </div>
+
         <form action="/submit_daftar.html" method="post">
-          <label for="no_daftar">Nomor Pendaftaran:</label>
-          <input type="number" id="no_daftar" name="no_daftar" required min="1" />
-          <br /><br />
+          
+          <!-- SEKSI 1: DATA UTAMA -->
+          <div class="form-card">
+            <h2>Data Pendaftaran & Diri Siswa</h2>
+            <div class="form-grid">
+              
+              <div class="form-group">
+                <label for="no_daftar">Nomor Pendaftaran:</label>
+                <input type="number" id="no_daftar" name="no_daftar" required min="1" />
+              </div>
 
-          <label for="nama">Nama Lengkap:</label>
-          <input type="text" id="nama" name="nama" required /><br /><br />
+              <div class="form-group">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" required />
+              </div>
 
-          <label for="namaPanggilan">Nama Panggilan:</label>
-          <input type="text" id="namaPanggilan" name="namaPanggilan" required /><br /><br />
+              <div class="form-group">
+                <label for="namaPanggilan">Nama Panggilan:</label>
+                <input type="text" id="namaPanggilan" name="namaPanggilan" required />
+              </div>
 
-          <label for="jk">Jenis Kelamin:</label>
-          <input type="radio" name="jk" id="jkL" value="Laki-laki" />
-          <label for="jkL">Laki-laki</label>
-          <input type="radio" name="jk" id="jkP" value="Perempuan" />
-          <label for="jkP">Perempuan</label><br /><br />
+              <div class="form-group">
+                <label>Jenis Kelamin:</label>
+                <div class="radio-inline">
+                  <label for="jkL"><input type="radio" name="jk" id="jkL" value="Laki-laki" /> Laki-laki</label>
+                  <label for="jkP"><input type="radio" name="jk" id="jkP" value="Perempuan" /> Perempuan</label>
+                </div>
+              </div>
 
-          <label for="tmpLahir">Tempat Lahir:</label>
-          <input type="text" id="tmpLahir" name="tmpLahir" required /><br /><br />
+              <div class="form-group">
+                <label for="tmpLahir">Tempat Lahir:</label>
+                <input type="text" id="tmpLahir" name="tmpLahir" required />
+              </div>
 
-          <label for="tglLahir">Tanggal Lahir:</label>
-          <input type="date" name="tglLahir" id="tglLahir" /><br /><br />
+              <div class="form-group">
+                <label for="tglLahir">Tanggal Lahir:</label>
+                <input type="date" name="tglLahir" id="tglLahir" />
+              </div>
 
-          <label for="agama">Pilih Agama:</label>
-          <select id="agama" name="agama" required>
-            <option value="" disabled selected>-- Pilih Agama Anda --</option>
-            <option value="islam">Islam</option>
-            <option value="kristen">Kristen</option>
-            <option value="katolik">Katolik</option>
-            <option value="hindu">Hindu</option>
-            <option value="buddha">Buddha</option>
-            <option value="khonghucu">Khonghucu</option>
-          </select><br /><br />
+              <div class="form-group">
+                <label for="agama">Pilih Agama:</label>
+                <select id="agama" name="agama" required>
+                  <option value="" disabled selected>-- Pilih Agama Anda --</option>
+                  <option value="islam">Islam</option>
+                  <option value="kristen">Kristen</option>
+                  <option value="katolik">Katolik</option>
+                  <option value="hindu">Hindu</option>
+                  <option value="buddha">Buddha</option>
+                  <option value="khonghucu">Khonghucu</option>
+                </select>
+              </div>
 
-          <label for="alamat">Alamat:</label>
-          <textarea name="alamat" id="alamat" placeholder="Masukkan alamat..." rows="4" cols="30" required></textarea>
-          <br /><br />
+              <div class="form-group">
+                <label for="noTelp">No. Telp/HP/WA:</label>
+                <input type="text" id="noTelp" name="noTelp" required />
+              </div>
 
-          <label for="noTelp">No. Telp/HP/WA:</label>
-          <input type="text" id="noTelp" name="noTelp" required /><br /><br />
+              <div class="form-group full-width">
+                <label for="alamat">Alamat:</label>
+                <textarea name="alamat" id="alamat" placeholder="Masukkan alamat..." rows="2" required></textarea>
+              </div>
 
-          <label for="kota">Kota:</label>
-          <input type="text" id="kota" name="kota" required /><br /><br />
+              <div class="form-group">
+                <label for="kota">Kota:</label>
+                <input type="text" id="kota" name="kota" required />
+              </div>
 
-          <label for="kabupaten">Kabupaten:</label>
-          <input type="text" id="kabupaten" name="kabupaten" required /><br /><br />
+              <div class="form-group">
+                <label for="kabupaten">Kabupaten:</label>
+                <input type="text" id="kabupaten" name="kabupaten" required />
+              </div>
 
-          <label for="propinsi">Propinsi:</label>
-          <input type="text" id="propinsi" name="propinsi" required /><br /><br />
+              <div class="form-group">
+                <label for="propinsi">Propinsi:</label>
+                <input type="text" id="propinsi" name="propinsi" required />
+              </div>
 
-          <label for="kewarganegaraan">Kewarganegaraan:</label>
-          <input type="text" id="kewarganegaraan" name="kewarganegaraan" required /><br /><br />
+              <div class="form-group">
+                <label for="kewarganegaraan">Kewarganegaraan:</label>
+                <input type="text" id="kewarganegaraan" name="kewarganegaraan" required />
+              </div>
 
-          <label for="tinggalBersama">Berempat tinggal pada:</label>
-          <input type="text" id="tinggalBersama" name="tinggalBersama" required /><br /><br />
+              <div class="form-group">
+                <label for="tinggalBersama">Berempat tinggal pada:</label>
+                <input type="text" id="tinggalBersama" name="tinggalBersama" required />
+              </div>
 
-          <label for="infoDari">Memperoleh informasi tentang MTs PLUS Al Jawami Cilacap dari:</label>
-          <input type="text" id="infoDari" name="infoDari" required /><br /><br />
+              <div class="form-group full-width">
+                <label for="infoDari">Memperoleh informasi tentang MTs PLUS Al Jawami Cilacap dari:</label>
+                <input type="text" id="infoDari" name="infoDari" required />
+              </div>
 
-          <hr />
+            </div>
+          </div>
 
-        <div>
+          <!-- SEKSI 2: PERKEMBANGAN SISWA -->
+          <div class="form-card">
+            <h2>Data Perkembangan Siswa</h2>
+            <p class="subtitle">Masuk Menjadi Murid Baru Tingkat I</p>
 
-          <h2>Data Perkembangan Siswa</h2>
-          <p><strong>Masuk Menjadi Murid Baru Tingkat I</strong></p>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="namaSMP">Nama SMP/MTS:</label>
+                <input type="text" id="namaSMP" name="namaSMP" />
+              </div>
 
-          <label for="namaSMP">Nama SMP/MTS:</label>
-          <input type="text" id="namaSMP" name="namaSMP" /><br /><br />
+              <div class="form-group">
+                <label for="sttb">Tanggal & No. STTB:</label>
+                <input type="text" id="sttb" name="sttb" />
+              </div>
 
-          <label for="alamatSMP">Alamat:</label>
-          <textarea name="alamatSMP" id="alamatSMP" rows="3" cols="30"></textarea><br /><br />
+              <div class="form-group full-width">
+                <label for="alamatSMP">Alamat SMP/MTS:</label>
+                <textarea name="alamatSMP" id="alamatSMP" rows="2"></textarea>
+              </div>
 
-          <label for="sttb">Tanggal & No. STTB:</label>
-          <input type="text" id="sttb" name="sttb" /><br /><br />
+              <div class="form-group">
+                <label for="pindahanDari">Pindahan dari:</label>
+                <input type="text" id="pindahanDari" name="pindahanDari" />
+              </div>
 
-          <label for="pindahanDari">Pindahan dari:</label>
-          <input type="text" id="pindahanDari" name="pindahanDari" /><br /><br />
+              <div class="form-group">
+                <label for="asalSekolah">Asal Sekolah:</label>
+                <input type="text" id="asalSekolah" name="asalSekolah" />
+              </div>
 
-          <label for="asalSekolah">Asal Sekolah:</label>
-          <input type="text" id="asalSekolah" name="asalSekolah" /><br /><br />
+              <div class="form-group">
+                <label for="dariTingkat">Dari Tingkat/NISN:</label>
+                <input type="text" id="dariTingkat" name="dariTingkat" />
+              </div>
 
-          <label for="dariTingkat">Dari Tingkat/NISN:</label>
-          <input type="text" id="dariTingkat" name="dariTingkat" /><br /><br />
+              <div class="form-group full-width">
+                <label for="alasanPindah">Alasan Pindah:</label>
+                <textarea name="alasanPindah" id="alasanPindah" rows="2"></textarea>
+              </div>
+            </div>
+          </div>
 
-          <label for="alasanPindah">Alasan Pindah:</label>
-          <textarea name="alasanPindah" id="alasanPindah" rows="3" cols="30"></textarea><br /><br />
-
-        </div>
-
-          <hr />
-
-          <div>
+          <!-- SEKSI 3: KELUARGA & DATA FISIK -->
+          <div class="form-card">
             <h2>Keluarga & Data Fisik Keluarga</h2>
+            
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="anakKe">Anak ke berapa:</label>
+                <input type="number" id="anakKe" name="anakKe" />
+              </div>
 
-            <label for="anakKe">Anak ke berapa:</label>
-            <input type="number" id="anakKe" name="anakKe" /><br /><br />
+              <div class="form-group">
+                <label for="hubunganAnak">Hubungan anak kandung/angkat:</label>
+                <input type="text" id="hubunganAnak" name="hubunganAnak" />
+              </div>
 
-            <label for="hubunganAnak">Hubungan anak kandung/angkat:</label>
-            <input type="text" id="hubunganAnak" name="hubunganAnak" /><br /><br />
+              <div class="form-group">
+                <label for="saudaraKandung">Saudara Kandung:</label>
+                <input type="text" id="saudaraKandung" name="saudaraKandung" />
+              </div>
 
-            <label for="saudaraKandung">Saudara Kandung:</label>
-            <input type="text" id="saudaraKandung" name="saudaraKandung" /><br /><br />
+              <div class="form-group">
+                <label for="saudaraTiri">Saudara Tiri/Angkat:</label>
+                <input type="text" id="saudaraTiri" name="saudaraTiri" />
+              </div>
+            </div>
 
-            <label for="saudaraTiri">Saudara Tiri/Angkat:</label>
-            <input type="text" id="saudaraTiri" name="saudaraTiri" /><br /><br />
+            <div class="sub-section">
+              <p><strong>Saudara yang bersekolah di MTs PLUS Al Jawami Cilacap:</strong></p>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="saudara1">Nama/Kelas 1:</label>
+                  <input type="text" id="saudara1" name="saudara1" />
+                </div>
+                <div class="form-group">
+                  <label for="saudara2">Nama/Kelas 2:</label>
+                  <input type="text" id="saudara2" name="saudara2" />
+                </div>
+                <div class="form-group">
+                  <label for="saudara3">Nama/Kelas 3:</label>
+                  <input type="text" id="saudara3" name="saudara3" />
+                </div>
+                <div class="form-group">
+                  <label for="bahasa">Bahasa sehari-hari:</label>
+                  <input type="text" id="bahasa" name="bahasa" />
+                </div>
+              </div>
+            </div>
 
-            <p>Saudara yang bersekolah di MTs PLUS Al Jawami Cilacap:</p>
-            <label for="saudara1">Nama/Kelas 1:</label>
-            <input type="text" id="saudara1" name="saudara1" /><br /><br />
-            <label for="saudara2">Nama/Kelas 2:</label>
-            <input type="text" id="saudara2" name="saudara2" /><br /><br />
-            <label for="saudara3">Nama/Kelas 3:</label>
-            <input type="text" id="saudara3" name="saudara3" /><br /><br />
+            <div class="sub-section">
+              <p><strong>Data Fisik Siswa:</strong></p>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="beratBadan">Berat Badan:</label>
+                  <input type="text" id="beratBadan" name="beratBadan" />
+                </div>
 
-            <label for="bahasa">Bahasa sehari-hari:</label>
-            <input type="text" id="bahasa" name="bahasa" /><br /><br />
+                <div class="form-group">
+                  <label for="tinggiBadan">Tinggi Badan:</label>
+                  <input type="text" id="tinggiBadan" name="tinggiBadan" />
+                </div>
 
-            <p><strong>Data Fisik</strong></p>
-            <label for="beratBadan">Berat Badan:</label>
-            <input type="text" id="beratBadan" name="beratBadan" /><br /><br />
+                <div class="form-group">
+                  <label for="golDarah">Golongan Darah:</label>
+                  <input type="text" id="golDarah" name="golDarah" />
+                </div>
 
-            <label for="tinggiBadan">Tinggi Badan:</label>
-            <input type="text" id="tinggiBadan" name="tinggiBadan" /><br /><br />
-
-            <label for="golDarah">Golongan Darah:</label>
-            <input type="text" id="golDarah" name="golDarah" /><br /><br />
-
-            <label for="riwayatPenyakit">Riwayat Penyakit:</label>
-            <textarea name="riwayatPenyakit" id="riwayatPenyakit" rows="3" cols="30"></textarea><br /><br />
+                <div class="form-group full-width">
+                  <label for="riwayatPenyakit">Riwayat Penyakit:</label>
+                  <textarea name="riwayatPenyakit" id="riwayatPenyakit" rows="2"></textarea>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <hr />
-
-          <div>
+          <!-- SEKSI 4: ORANG TUA -->
+          <div class="form-card">
             <h2>Data Orang Tua Siswa</h2>
-            <label for="namaAyah">Nama Ayah:</label>
-            <input type="text" id="namaAyah" name="namaAyah" required /><br /><br />
 
-            <label for="tmpLahirAyah">Tempat Lahir Ayah:</label>
-            <input type="text" id="tmpLahirAyah" name="tmpLahirAyah" required /><br /><br />
+            <div class="parent-flex">
+              <!-- AYAH -->
+              <div class="parent-box">
+                <h3>Data Ayah</h3>
+                <div class="form-group">
+                  <label for="namaAyah">Nama Ayah:</label>
+                  <input type="text" id="namaAyah" name="namaAyah" required />
+                </div>
+                <div class="form-group">
+                  <label for="tmpLahirAyah">Tempat Lahir Ayah:</label>
+                  <input type="text" id="tmpLahirAyah" name="tmpLahirAyah" required />
+                </div>
+                <div class="form-group">
+                  <label for="tglLahirAyah">Tanggal Lahir Ayah:</label>
+                  <input type="date" name="tglLahirAyah" id="tglLahirAyah" />
+                </div>
+                <div class="form-group">
+                  <label for="pendidikanAyah">Pendidikan Ayah:</label>
+                  <input type="text" id="pendidikanAyah" name="pendidikanAyah" />
+                </div>
+                <div class="form-group">
+                  <label for="pkjAyah">Pekerjaan Ayah:</label>
+                  <input type="text" id="pkjAyah" name="pkjAyah" required />
+                </div>
+                <div class="form-group">
+                  <label for="kewarganegaraanAyah">Kewarganegaraan Ayah:</label>
+                  <input type="text" id="kewarganegaraanAyah" name="kewarganegaraanAyah" />
+                </div>
+                <div class="form-group">
+                  <label for="noHpAyah">No. Telp/Hp Ayah:</label>
+                  <input type="text" name="noHpAyah" id="noHpAyah" />
+                </div>
+                <div class="form-group">
+                  <label for="alamatAyah">Alamat Ayah:</label>
+                  <textarea name="alamatAyah" id="alamatAyah" rows="2"></textarea>
+                </div>
+              </div>
 
-            <label for="tglLahirAyah">Tanggal Lahir Ayah:</label>
-            <input type="date" name="tglLahirAyah" id="tglLahirAyah" /><br /><br />
-
-            <label for="pendidikanAyah">Pendidikan Ayah:</label>
-            <input type="text" id="pendidikanAyah" name="pendidikanAyah" /><br /><br />
-
-            <label for="pkjAyah">Pekerjaan Ayah:</label>
-            <input type="text" id="pkjAyah" name="pkjAyah" required /><br /><br />
-
-            <label for="kewarganegaraanAyah">Kewarganegaraan Ayah:</label>
-            <input type="text" id="kewarganegaraanAyah" name="kewarganegaraanAyah" /><br /><br />
-
-            <label for="alamatAyah">Alamat Ayah:</label>
-            <textarea name="alamatAyah" id="alamatAyah" rows="3" cols="30"></textarea><br /><br />
-
-            <label for="noHpAyah">No. Telp/Hp Ayah:</label>
-            <input type="text" name="noHpAyah" id="noHpAyah" /><br /><br />
-
-            <label for="namaIbu">Nama Ibu:</label>
-            <input type="text" id="namaIbu" name="namaIbu" required /><br /><br />
-
-            <label for="tmpLahirIbu">Tempat Lahir Ibu:</label>
-            <input type="text" id="tmpLahirIbu" name="tmpLahirIbu" required /><br /><br />
-
-            <label for="tglLahirIbu">Tanggal Lahir Ibu:</label>
-            <input type="date" name="tglLahirIbu" id="tglLahirIbu" /><br /><br />
-
-            <label for="pendidikanIbu">Pendidikan Ibu:</label>
-            <input type="text" id="pendidikanIbu" name="pendidikanIbu" /><br /><br />
-
-            <label for="pkjIbu">Pekerjaan Ibu:</label>
-            <input type="text" id="pkjIbu" name="pkjIbu" required /><br /><br />
-
-            <label for="kewarganegaraanIbu">Kewarganegaraan Ibu:</label>
-            <input type="text" id="kewarganegaraanIbu" name="kewarganegaraanIbu" /><br /><br />
-
-            <label for="alamatIbu">Alamat Ibu:</label>
-            <textarea name="alamatIbu" id="alamatIbu" rows="3" cols="30"></textarea><br /><br />
-
-            <label for="noHpIbu">No. Telp/Hp Ibu:</label>
-            <input type="text" name="noHpIbu" id="noHpIbu" /><br /><br />
+              <!-- IBU -->
+              <div class="parent-box">
+                <h3>Data Ibu</h3>
+                <div class="form-group">
+                  <label for="namaIbu">Nama Ibu:</label>
+                  <input type="text" id="namaIbu" name="namaIbu" required />
+                </div>
+                <div class="form-group">
+                  <label for="tmpLahirIbu">Tempat Lahir Ibu:</label>
+                  <input type="text" id="tmpLahirIbu" name="tmpLahirIbu" required />
+                </div>
+                <div class="form-group">
+                  <label for="tglLahirIbu">Tanggal Lahir Ibu:</label>
+                  <input type="date" name="tglLahirIbu" id="tglLahirIbu" />
+                </div>
+                <div class="form-group">
+                  <label for="pendidikanIbu">Pendidikan Ibu:</label>
+                  <input type="text" id="pendidikanIbu" name="pendidikanIbu" />
+                </div>
+                <div class="form-group">
+                  <label for="pkjIbu">Pekerjaan Ibu:</label>
+                  <input type="text" id="pkjIbu" name="pkjIbu" required />
+                </div>
+                <div class="form-group">
+                  <label for="kewarganegaraanIbu">Kewarganegaraan Ibu:</label>
+                  <input type="text" id="kewarganegaraanIbu" name="kewarganegaraanIbu" />
+                </div>
+                <div class="form-group">
+                  <label for="noHpIbu">No. Telp/Hp Ibu:</label>
+                  <input type="text" name="noHpIbu" id="noHpIbu" />
+                </div>
+                <div class="form-group">
+                  <label for="alamatIbu">Alamat Ibu:</label>
+                  <textarea name="alamatIbu" id="alamatIbu" rows="2"></textarea>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <hr />
-
-          <div>
-            <h2>Data Wali Siswa</h2>
-            <label for="namaWali">Nama Wali Siswa:</label>
-            <input type="text" id="namaWali" name="namaWali" /><br /><br />
-
-            <label for="tmpLahirWali">Tempat Lahir Wali:</label>
-            <input type="text" id="tmpLahirWali" name="tmpLahirWali" /><br /><br />
-
-            <label for="tglLahirWali">Tanggal Lahir Wali:</label>
-            <input type="date" name="tglLahirWali" id="tglLahirWali" /><br /><br />
-
-            <label for="pendidikanWali">Pendidikan Wali:</label>
-            <input type="text" id="pendidikanWali" name="pendidikanWali" /><br /><br />
-
-            <label for="pkjWali">Pekerjaan Wali:</label>
-            <input type="text" id="pkjWali" name="pkjWali" /><br /><br />
-
-            <label for="kewarganegaraanWali">Kewarganegaraan Wali:</label>
-            <input type="text" id="kewarganegaraanWali" name="kewarganegaraanWali" /><br /><br />
-
-            <label for="alamatWali">Alamat Wali:</label>
-            <textarea name="alamatWali" id="alamatWali" rows="3" cols="30"></textarea><br /><br />
-
-            <label for="noHpWali">No. Telp/HP Wali:</label>
-            <input type="text" name="noHpWali" id="noHpWali" /><br /><br />
-
-            <label for="hubunganWali">Hubungan Keluarga:</label>
-            <input type="text" id="hubunganWali" name="hubunganWali" placeholder="Tiri/Angkat" /><br /><br />
+          <!-- SEKSI 5: WALI SISWA -->
+          <div class="form-card">
+            <h2>Data Wali Siswa (Opsional)</h2>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="namaWali">Nama Wali Siswa:</label>
+                <input type="text" id="namaWali" name="namaWali" />
+              </div>
+              <div class="form-group">
+                <label for="tmpLahirWali">Tempat Lahir Wali:</label>
+                <input type="text" id="tmpLahirWali" name="tmpLahirWali" />
+              </div>
+              <div class="form-group">
+                <label for="tglLahirWali">Tanggal Lahir Wali:</label>
+                <input type="date" name="tglLahirWali" id="tglLahirWali" />
+              </div>
+              <div class="form-group">
+                <label for="pendidikanWali">Pendidikan Wali:</label>
+                <input type="text" id="pendidikanWali" name="pendidikanWali" />
+              </div>
+              <div class="form-group">
+                <label for="pkjWali">Pekerjaan Wali:</label>
+                <input type="text" id="pkjWali" name="pkjWali" />
+              </div>
+              <div class="form-group">
+                <label for="kewarganegaraanWali">Kewarganegaraan Wali:</label>
+                <input type="text" id="kewarganegaraanWali" name="kewarganegaraanWali" />
+              </div>
+              <div class="form-group">
+                <label for="noHpWali">No. Telp/HP Wali:</label>
+                <input type="text" name="noHpWali" id="noHpWali" />
+              </div>
+              <div class="form-group">
+                <label for="hubunganWali">Hubungan Keluarga:</label>
+                <input type="text" id="hubunganWali" name="hubunganWali" placeholder="Tiri/Angkat" />
+              </div>
+              <div class="form-group full-width">
+                <label for="alamatWali">Alamat Wali:</label>
+                <textarea name="alamatWali" id="alamatWali" rows="2"></textarea>
+              </div>
+            </div>
           </div>
 
-          <hr />
-
-          <div>
+          <!-- SEKSI 6: CATATAN & SUBMIT -->
+          <div class="form-card catatan-box">
             <h2>CATATAN</h2>
             <ol>
               <li>Menyerahkan Fotocopy Akte Kelahiran sebanyak 2 lembar</li>
@@ -250,12 +371,13 @@
               <li>Menyerahkan Fotocopy Ijazah SMP/MTS sebanyak 2 lembar</li>
               <li>Menyerahkan Fotocopy PKH/KIP/PIP (jika Ada)</li>
             </ol>
+            <button type="submit" class="btn-submit">Daftar Sekarang</button>
           </div>
 
-          <button type="submit">Daftar</button>
         </form>
       </section>
     </main>
+
     <footer>
       <h3 id="kontak">Informasi Madrasah</h3>
       <ul>

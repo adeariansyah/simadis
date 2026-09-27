@@ -57,92 +57,157 @@ nav ul li #daftar {
   font-weight: bold;
 }
 
-nav ul li #daftar:hover {
-  background-color: #E5B93D;
-  color: #0F5132;
-}
-
 /* Konten Utama */
 main {
   max-width: 1100px;
   margin: 2rem auto;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
 }
 
-section {
-  background-color: #FFFFFF;
-  border: 1px solid #D5E8DD;
-  border-radius: 10px;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-/* Tipografi */
-h1 {
+.head-form h1 {
   color: #176B45;
   font-size: 1.8rem;
-  margin-bottom: 0.75rem;
-}
-
-h2 {
-  color: #176B45;
-  font-size: 1.4rem;
-  margin-bottom: 0.5rem;
-}
-
-h3 {
-  color: #0F5132;
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-}
-
-p {
-  color: #374151;
-}
-
-/* Daftar Fitur */
-section ul {
-  list-style-position: inside;
-  padding-left: 0.5rem;
-}
-
-section ul li {
-  margin-bottom: 0.5rem;
-}
-
-/* Tabel */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 1rem;
-  font-size: 0.95rem;
-}
-
-th,
-td {
-  border: 1px solid #D5E8DD;
-  padding: 0.75rem;
-  text-align: left;
-}
-
-th {
-  background-color: #176B45;
-  color: #FFFFFF;
+  margin-bottom: 1.5rem;
   text-align: center;
 }
 
-/* Baris sub-header tabel */
-thead tr:last-child th {
-  background-color: #E8F6EE;
+/* PERBAIKAN UTAMA: KARTU PEMBUNGKUS & GRID */
+.form-card {
+  background-color: #FFFFFF;
+  border: 1px solid #D5E8DD;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+.form-card h2 {
+  color: #176B45;
+  font-size: 1.3rem;
+  border-bottom: 2px solid #E8F6EE;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-weight: bold;
   color: #0F5132;
+  margin-bottom: 1rem;
 }
 
-tbody tr:nth-child(even) {
+/* SISTEM GRID 2 KOLOM (Mencegah Input Memanjang Vertikal) */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  font-size: 0.88rem;
+  font-weight: bold;
+  color: #0F5132;
+  margin-bottom: 0.35rem;
+}
+
+/* EFEK INPUT MODERN & RAPI */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.55rem 0.75rem;
+  border: 1.5px solid #C2E2D0;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #1F2937;
+  background-color: #FAFCFA;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #176B45;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(23, 107, 69, 0.15);
+}
+
+.radio-inline {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  height: 38px;
+}
+
+.sub-section {
+  margin-top: 1.25rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed #D5E8DD;
+}
+
+.sub-section p {
+  margin-bottom: 0.75rem;
+}
+
+/* LAYOUT DATA AYAH & IBU BERDAMPINGAN */
+.parent-flex {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.parent-box {
   background-color: #F8FAF9;
+  border: 1px solid #D5E8DD;
+  border-radius: 8px;
+  padding: 1rem;
 }
 
-tbody tr:hover {
-  background-color: #E8F6EE;
+.parent-box h3 {
+  color: #0F5132;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #D5E8DD;
+  padding-bottom: 0.3rem;
+}
+
+/* CATATAN & BUTTON */
+.catatan-box ol {
+  padding-left: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.catatan-box ol li {
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.btn-submit {
+  width: 100%;
+  background-color: #F2C94C;
+  color: #0F5132;
+  font-size: 1.05rem;
+  font-weight: bold;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+  background-color: #E5B93D;
 }
 
 /* Footer */
@@ -168,4 +233,12 @@ footer ul {
 footer ul li {
   margin-bottom: 0.25rem;
   font-size: 0.9rem;
+}
+
+/* RESPONSIF MOBILE */
+@media (max-width: 768px) {
+  .form-grid,
+  .parent-flex {
+    grid-template-columns: 1fr;
+  }
 }
