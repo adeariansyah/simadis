@@ -558,6 +558,15 @@ footer ul li {
   margin: 0 auto;
 }
 
+.spmb-landing .flow-step {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.spmb-landing .flow-step:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(23, 107, 69, 0.2);
+}
+
 .spmb-landing .spmb-flow {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
