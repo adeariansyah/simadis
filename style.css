@@ -253,26 +253,7 @@ footer ul li {
 }
 
 .spmb-landing .btn-primary {
- background-color: #176B45;
-  color: #ffffff;
-  padding: 10px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.9rem;
-  transition: 0.3s;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-}
-
-.spmb-landing .btn-primary:hover {
-  background-color: #0f5132;
-}
-
-.spmb-landing .btn-secondary {
-  background-color: #f2c94c;
+ background-color: #f2c94c;
   color: #0f5132;
   padding: 10px 20px;
   border-radius: 8px;
@@ -286,13 +267,34 @@ footer ul li {
   white-space: nowrap;
 }
 
-.spmb-landing .btn-secondary:hover {
+.spmb-landing .btn-primary:hover {
   background-color: #d4a92c;
+}
+
+.spmb-landing .btn-secondary {
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 20px;
+  border: 2px solid #f2c94c;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.spmb-landing .btn-secondary:hover {
+  background-color: #f2c94c;
+  color: #0F5132;
 }
 
 /* Header & Navbar */
 .spmb-landing .landing-header {
-  background-color: #ffffff;
+  background-color: #0F5132;
   box-shadow: 0 4px 15px rgba(0,0,0,0.05);
   position: sticky;
   top: 0;
@@ -314,7 +316,7 @@ footer ul li {
   gap: 12px;
   font-size: 1.35rem;
   font-weight: 700;
-  color: #176B45;
+  color: #fff;
   white-space: nowrap; 
   flex-shrink: 0;
   margin-right: 20px;
@@ -333,7 +335,7 @@ footer ul li {
 }
 
 .spmb-landing .landing-menu li a {
-  color: #1F2937;
+  color: #fff;
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
@@ -342,7 +344,7 @@ footer ul li {
 }
 
 .spmb-landing .landing-menu li a:hover {
-  color: #3fae72;
+  color: #f2c94c;
 }
 
 .spmb-landing .landing-cta {
@@ -400,6 +402,20 @@ footer ul li {
   font-size: 1.15rem;
   padding: 15px 35px;
   box-shadow: 0 6px 20px rgba(242, 201, 76, 0.4);
+  background-color: #F2C94C;
+  color: #0f5132;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.spmb-landing .hero-btn:hover {
+  background-color: #d4a92c;
 }
 
 .spmb-landing .hero-image {
