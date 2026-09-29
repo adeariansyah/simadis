@@ -242,3 +242,534 @@ footer ul li {
     grid-template-columns: 1fr;
   }
 }
+
+/* =========================================
+   STYLING KHUSUS LANDING PAGE (index.html)
+   ========================================= */
+.spmb-landing {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #1F2937;
+}
+
+.spmb-landing .btn-primary {
+  background-color: #176B45;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.spmb-landing .btn-primary:hover {
+  background-color: #0f5132;
+}
+
+.spmb-landing .btn-secondary {
+  background-color: #f2c94c;
+  color: #0f5132;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.spmb-landing .btn-secondary:hover {
+  background-color: #d4a92c;
+}
+
+/* Header & Navbar */
+.spmb-landing .landing-header {
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.spmb-landing .landing-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.2rem 2rem;
+}
+
+.spmb-landing .landing-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #176B45;
+}
+
+.spmb-landing .landing-logo {
+  height: 45px;
+}
+
+.spmb-landing .landing-menu {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.spmb-landing .landing-menu li a {
+  color: #1F2937;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s;
+  white-space: nowrap;
+}
+
+.spmb-landing .landing-menu li a:hover {
+  color: #3fae72;
+}
+
+.spmb-landing .landing-cta {
+  display: flex;
+  gap: 12px;
+}
+
+/* Quick Alert */
+.spmb-landing .landing-alert {
+  background-color: #f2c94c;
+  color: #0f5132;
+  text-align: center;
+  padding: 12px;
+  font-size: 0.95rem;
+}
+
+/* Hero Section */
+.spmb-landing .landing-hero {
+  background-color: #F8FBF9;
+  padding: 80px 20px;
+}
+
+.spmb-landing .hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.spmb-landing .hero-content {
+  flex: 1;
+  text-align: left;
+}
+
+.spmb-landing .hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 24px;
+  font-weight: 700;
+  color: #176B45;
+  line-height: 1.2;
+}
+
+.spmb-landing .hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 35px;
+  color: #1F2937;
+}
+
+.spmb-landing .hero-btn {
+  font-size: 1.15rem;
+  padding: 15px 35px;
+  box-shadow: 0 6px 20px rgba(242, 201, 76, 0.4);
+}
+
+.spmb-landing .hero-image {
+  flex: 1;
+}
+
+.spmb-landing .hero-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(23, 107, 69, 0.15);
+  object-fit: cover;
+}
+
+/* Stats Section */
+.spmb-landing .landing-stats-section {
+  background-color: #176B45;
+  padding: 60px 20px;
+}
+
+.spmb-landing .landing-stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.spmb-landing .stat-card {
+  background: #ffffff;
+  padding: 25px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  text-align: center;
+  flex: 1;
+  border-bottom: 5px solid #f2c94c;
+}
+
+.spmb-landing .stat-card h3 {
+  font-size: 2.2rem;
+  color: #176B45;
+  margin-bottom: 5px;
+}
+
+.spmb-landing .stat-card p {
+  color: #0f5132;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Sections Global */
+.spmb-landing section {
+  padding: 80px 20px;
+}
+
+.spmb-landing section h2 {
+  text-align: center;
+  color: #176B45;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+/* Profile Section */
+.spmb-landing .landing-profil {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.spmb-landing .headmaster-profile {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background: #E8F6EE;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(23, 107, 69, 0.1);
+}
+
+.spmb-landing .headmaster-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #176B45;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.spmb-landing .headmaster-text blockquote {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #0f5132;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.spmb-landing .headmaster-text h4 {
+  color: #176B45;
+  font-size: 1.2rem;
+}
+
+.spmb-landing .vision-mission {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.spmb-landing .vm-card {
+  background: #ffffff;
+  border: 1px solid #D5E8DD;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(23, 107, 69, 0.12);
+}
+
+.spmb-landing .vm-card h3 {
+  color: #3fae72;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.spmb-landing .vm-card p,
+.spmb-landing .vm-card ul {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.spmb-landing .vm-card ul {
+  padding-left: 20px;
+}
+
+/* SPMB Flow */
+.spmb-landing .landing-spmb-section {
+  background-color: #F8FBF9;
+}
+
+.spmb-landing .landing-spmb-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.spmb-landing .spmb-flow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.spmb-landing .flow-step {
+  text-align: center;
+  padding: 30px 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(23, 107, 69, 0.1);
+}
+
+.spmb-landing .step-number {
+  width: 60px;
+  height: 60px;
+  background: #3fae72;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px auto;
+  box-shadow: 0 4px 10px rgba(63, 174, 114, 0.4);
+}
+
+.spmb-landing .flow-step h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #176B45;
+}
+
+.spmb-landing .spmb-requirements {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(23, 107, 69, 0.1);
+  border-left: 6px solid #f2c94c;
+}
+
+.spmb-landing .spmb-requirements h3 {
+  color: #176B45;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.spmb-landing .spmb-requirements ul {
+  padding-left: 20px;
+  font-size: 1.05rem;
+}
+
+.spmb-landing .spmb-requirements li {
+  margin-bottom: 12px;
+}
+
+/* Facilities */
+.spmb-landing .landing-facilities {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.spmb-landing .facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.spmb-landing .facility-card {
+  text-align: center;
+  padding: 40px 25px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(23, 107, 69, 0.12);
+  border-top: 5px solid #176B45;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.spmb-landing .facility-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(23, 107, 69, 0.2);
+}
+
+.spmb-landing .facility-card .icon {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.spmb-landing .facility-card h4 {
+  color: #0f5132;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+/* FAQ */
+.spmb-landing .landing-faq {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.spmb-landing .faq-item {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #D5E8DD;
+}
+
+.spmb-landing .faq-item h4 {
+  color: #176B45;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.spmb-landing .faq-item p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Footer */
+.spmb-landing .landing-footer {
+  background-color: #0f5132;
+  color: #ffffff;
+  padding: 80px 20px 30px 20px;
+}
+
+.spmb-landing .footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.spmb-landing .footer-identity h3 {
+  color: #f2c94c;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.spmb-landing .footer-links h4,
+.spmb-landing .footer-contact h4 {
+  color: #f2c94c;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.spmb-landing .footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.spmb-landing .footer-links li {
+  margin-bottom: 12px;
+}
+
+.spmb-landing .footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+
+.spmb-landing .footer-links a:hover {
+  color: #3fae72;
+}
+
+.spmb-landing .footer-contact p {
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+}
+
+.spmb-landing .footer-bottom {
+  text-align: center;
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: 0.95rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .spmb-landing .landing-menu {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .spmb-landing .landing-nav {
+    flex-direction: column;
+    gap: 20px;
+    padding: 1rem;
+  }
+  .spmb-landing .landing-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .spmb-landing .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .spmb-landing .hero-content {
+    text-align: center;
+  }
+  .spmb-landing .landing-stats {
+    flex-wrap: wrap;
+  }
+  .spmb-landing .stat-card {
+    min-width: 45%;
+  }
+  .spmb-landing .vision-mission {
+    grid-template-columns: 1fr;
+  }
+  .spmb-landing .spmb-flow,
+  .spmb-landing .facilities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .spmb-landing .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .spmb-landing .headmaster-profile {
+    flex-direction: column;
+    text-align: center;
+  }
+  .spmb-landing .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .spmb-landing .spmb-flow,
+  .spmb-landing .facilities-grid {
+    grid-template-columns: 1fr;
+  }
+  .spmb-landing .stat-card {
+    min-width: 100%;
+  }
+  .spmb-landing .landing-cta {
+    flex-direction: column;
+    width: 100%;
+  }
+  .spmb-landing .landing-cta a {
+    text-align: center;
+  }
+}

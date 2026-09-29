@@ -1,83 +1,219 @@
 <!doctype html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SPMB MTs Plus Al-Jawami Cilacap</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <div class="brand">SIMADIS</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SPMB MTs Plus Al-Jawami</title>
+  <!-- Font Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-        <ul>
-          <li>
-            <a href="index.html">Beranda</a>
-          </li>
-
-          <li>
-            <a href="#profil">Profil Sistem</a>
-          </li>
-
-          <li>
-            <a href="#manfaat">Manfaat</a>
-          </li>
-
-          <li>
-            <a href="#kontak">Kontak</a>
-          </li>
-
-          <li>
-            <a href="daftar.html" id="daftar">
-              <b>Daftar Sekarang</b>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section id="profil">
-        <h1>
-          SIMADIS: Layanan Pendataaan Siswa Baru dan Buku Nominatif Madrasah
-        </h1>
-
-        <p>
-          Pusat informasi dan pengelolaan administrasi siswa MTs Plus Al-Jawami
-          Cilacap yang menghubungkan proses penerimaan siswa baru, penataan
-          rombongan belajar yang adil, hingga penyusunan arsip buku nominatif
-          tahunan secara rapi.
-        </p>
-      </section>
-
-      <section id="manfaat">
-        <h2>Kemudahan yang Diberikan untuk Madrasah</h2>
-
-        <h3>Layanan Utama Pengelolaan Data</h3>
-
-        <ul>
-          <li>Pencatatan berkas satu pintu</li>
-          <li>Pemeriksaan Kelengkapan Syarat Berkas</li>
-          <li>Pembagian Kelas yang Seimbang dan Merata</li>
-          <li>Buku Nominatif Siap Pakai</li>
-        </ul>
-      </section>
-    </main>
-
-    <footer>
-      <h3 id="kontak">Informasi Madrasah</h3>
-
-      <ul>
-        <li>
-          Jl. Kendal II, Tritih Kulon, Kec. Cilacap Utara, Kabupaten Cilacap
-        </li>
-
-        <li>aljawamidigital@gmail.com</li>
-
-        <li>081331211114</li>
+<body class="spmb-landing">
+  <!-- Header & Navbar -->
+  <header class="landing-header">
+    <nav class="landing-nav">
+      <div class="landing-brand">
+        <img src="assets/img/logo.png" alt="Logo MTs Plus Al-Jawami" class="landing-logo">
+        <span>MTs Plus Al-Jawami</span>
+      </div>
+      <ul class="landing-menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#fasilitas">Fasilitas & Ekskul</a></li>
+        <li><a href="#spmb">Informasi SPMB</a></li>
+        <li><a href="#footer">Kontak</a></li>
       </ul>
-    </footer>
-  </body>
+      <div class="landing-cta">
+        <a href="pengumuman.html" class="btn-secondary">Cek Pengumuman</a>
+        <a href="daftar.html" class="btn-primary">Daftar Online</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Quick Alert -->
+  <div class="landing-alert">
+    <strong>Info Penting:</strong> Pendaftaran Gelombang 1 dibuka dari 1 Februari hingga 30 April 2026.
+  </div>
+
+  <main class="landing-main">
+    <!-- Hero Section (Split Layout) -->
+    <section class="landing-hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1>Selamat Datang di Generasi Rabbani</h1>
+          <p>Membentuk pribadi cerdas, berakhlak mulia, dan berwawasan global di MTs Plus Al-Jawami.</p>
+          <a href="daftar.html" class="btn-secondary hero-btn">Formulir Pendaftaran</a>
+        </div>
+        <div class="hero-image">
+          <img src="assets/img/hero.jpeg" alt="Siswa MTs Plus Al-Jawami" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Cards Section -->
+    <section class="landing-stats-section">
+      <div class="landing-stats">
+        <div class="stat-card">
+          <h3>500+</h3>
+          <p>Siswa Aktif</p>
+        </div>
+        <div class="stat-card">
+          <h3>15+</h3>
+          <p>Ekstrakurikuler</p>
+        </div>
+        <div class="stat-card">
+          <h3>A</h3>
+          <p>Akreditasi</p>
+        </div>
+        <div class="stat-card">
+          <h3>100%</h3>
+          <p>Guru Tersertifikasi</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profile & Headmaster Welcome Section -->
+    <section id="profil" class="landing-profil">
+      <div class="headmaster-profile">
+        <img src="assets/img/kepsek.jpeg" alt="Foto Kepala Madrasah" class="headmaster-photo">
+        <div class="headmaster-text">
+          <blockquote>"Kami berkomitmen mencetak generasi masa depan yang seimbang antara ilmu pengetahuan umum dan ilmu
+            agama."</blockquote>
+          <h4>Ahmad Adibudin Al Halim</h4>
+          <p>Kepala Madrasah MTs Plus Al-Jawami</p>
+        </div>
+      </div>
+      <div class="vision-mission">
+        <div class="vm-card">
+          <h3>Visi</h3>
+          <p>Terwujudnya madrasah yang unggul dalam prestasi, berakhlakul karimah, dan berwawasan lingkungan hidup
+            berlandaskan iman dan taqwa.</p>
+        </div>
+        <div class="vm-card">
+          <h3>Misi</h3>
+          <ul>
+            <li>Menyelenggarakan pendidikan agama yang mendalam dan aplikatif.</li>
+            <li>Mengembangkan minat, bakat, dan potensi siswa.</li>
+            <li>Menerapkan teknologi informasi dalam pembelajaran.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPMB Information & Registration Flow -->
+    <section id="spmb" class="landing-spmb-section">
+      <div class="landing-spmb-container">
+        <h2>Informasi Pendaftaran (SPMB)</h2>
+        <div class="spmb-flow">
+          <div class="flow-step">
+            <div class="step-number">1</div>
+            <h4>Daftar Online</h4>
+            <p>Isi formulir pendaftaran melalui website.</p>
+          </div>
+          <div class="flow-step">
+            <div class="step-number">2</div>
+            <h4>Serahkan Berkas</h4>
+            <p>Lengkapi persyaratan dan kumpulkan dokumen fisik.</p>
+          </div>
+          <div class="flow-step">
+            <div class="step-number">3</div>
+            <h4>Pengumuman</h4>
+            <p>Cek hasil kelulusan di website resmi.</p>
+          </div>
+          <div class="flow-step">
+            <div class="step-number">4</div>
+            <h4>Daftar Ulang</h4>
+            <p>Verifikasi langsung dan pembayaran administrasi.</p>
+          </div>
+        </div>
+
+        <div class="spmb-requirements">
+          <h3>Persyaratan Berkas</h3>
+          <ul>
+            <li>Fotokopi Akte Kelahiran (2 Lembar)</li>
+            <li>Fotokopi Kartu Keluarga (2 Lembar)</li>
+            <li>Fotokopi Ijazah/SKHUN yang dilegalisir (2 Lembar)</li>
+            <li>Pas Foto 3x4 dan 4x6 masing-masing 4 Lembar (Latar Merah)</li>
+            <li>NISN Print Out dari web kemdikbud</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Programs & Facilities Section -->
+    <section id="fasilitas" class="landing-facilities">
+      <h2>Program Unggulan & Fasilitas</h2>
+      <div class="facilities-grid">
+        <div class="facility-card">
+          <div class="icon">📖</div>
+          <h4>Tahfidz Al-Quran</h4>
+          <p>Program hafalan Quran dengan target minimal 3 Juz.</p>
+        </div>
+        <div class="facility-card">
+          <div class="icon">🕌</div>
+          <h4>Masjid Raya</h4>
+          <p>Pusat kegiatan ibadah dan pembinaan karakter siswa.</p>
+        </div>
+        <div class="facility-card">
+          <div class="icon">💻</div>
+          <h4>Lab Komputer CBT</h4>
+          <p>Fasilitas komputer modern untuk pembelajaran dan ujian.</p>
+        </div>
+        <div class="facility-card">
+          <div class="icon">🔬</div>
+          <h4>Lab IPA Modern</h4>
+          <p>Ruang praktikum representatif untuk sains terpadu.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="landing-faq">
+      <h2>Tanya Jawab (FAQ)</h2>
+      <div class="faq-item">
+        <h4>Kapan batas akhir pendaftaran?</h4>
+        <p>Gelombang pertama ditutup pada tanggal 30 April 2026. Jika kuota belum terpenuhi, akan dibuka Gelombang 2.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h4>Apakah ada asrama (Boarding)?</h4>
+        <p>Ya, kami menyediakan fasilitas pesantren kilat dan program asrama bagi siswa yang berminat.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Berapa biaya pendaftaran?</h4>
+        <p>Biaya formulir pendaftaran adalah Rp 150.000, dapat ditransfer atau dibayar langsung di madrasah.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="landing-footer">
+    <div class="footer-container">
+      <div class="footer-identity">
+        <h3>MTs Plus Al-Jawami</h3>
+        <p>Membentuk Generasi Rabbani yang Cerdas dan Berakhlak Mulia.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="daftar.html">Pendaftaran</a></li>
+          <li><a href="pengumuman.html">Pengumuman</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Kontak & Alamat</h4>
+        <p>📍 Jl. Kendal II, Tritih Kulon, Kec. Cilacap Utara, Cilacap</p>
+        <p>📧 aljawamidigital@gmail.com</p>
+        <p>📞 0813 3121 1114</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 MTs Plus Al-Jawami. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
 </html>
