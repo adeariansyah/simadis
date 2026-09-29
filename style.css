@@ -253,14 +253,18 @@ footer ul li {
 }
 
 .spmb-landing .btn-primary {
-  background-color: #176B45;
+ background-color: #176B45;
   color: #ffffff;
   padding: 10px 20px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
+  font-size: 0.9rem;
   transition: 0.3s;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
 }
 
 .spmb-landing .btn-primary:hover {
@@ -274,8 +278,12 @@ footer ul li {
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
+  font-size: 0.9rem;
   transition: 0.3s;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
 }
 
 .spmb-landing .btn-secondary:hover {
@@ -304,9 +312,12 @@ footer ul li {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: 700;
   color: #176B45;
+  white-space: nowrap; 
+  flex-shrink: 0;
+  margin-right: 20px;
 }
 
 .spmb-landing .landing-logo {
@@ -314,9 +325,9 @@ footer ul li {
 }
 
 .spmb-landing .landing-menu {
-  display: flex;
+ display: flex;
   list-style: none;
-  gap: 2.5rem;
+  gap: 1.8rem;
   margin: 0;
   padding: 0;
 }
@@ -336,7 +347,10 @@ footer ul li {
 
 .spmb-landing .landing-cta {
   display: flex;
+  align-items: center;
   gap: 12px;
+  flex-shrink: 0;
+  margin-left: 15px;
 }
 
 /* Quick Alert */
