@@ -1,71 +1,62 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form Pendaftaran</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="brand">SIMADIS</div>
-        <ul>
-          <li>
-            <a href="index.html">Beranda</a>
-          </li>
-          <li>
-            <a href="daftar.html">Pendaftaran</a>
-          </li>
-          <li>
-            <a href="pengumuman.html">Pengumuman</a>
-          </li>
-          <li>
-            <a href="#">Daftar Ulang</a>
-          </li>
-          <li>
-            <a href="#">Kontak</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <div class="head">
-          <h1>Pengumuman Pendaftaran</h1>
-        </div>
-        <form action="/cek_hasil.html" method="post">
-          <label for="no_daftar">No. Pendaftaran:</label>
-          <input
-            type="number"
-            id="no_daftar"
-            name="no_daftar"
-            placeholder="Masukkan nomor pendaftaran..."
-            required
-            min="0"
-          /><br /><br />
-          <label for="pin">PIN:</label>
-          <input
-            type="text"
-            id="pin"
-            name="pin"
-            placeholder="Masukkan pin pendaftaran..."
-            required
-          /><br /><br />
 
-          <button type="submit">Cek Hasil</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <h3 id="kontak">Informasi Madrasah</h3>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Pendaftaran</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="brand">SIMADIS</div>
       <ul>
         <li>
-          Jl. Kendal II, Tritih Kulon, Kec. Cilacap Utara, Kabupaten Cilacap
+          <a href="index.html">Beranda</a>
         </li>
-        <li>aljawamidigital@gmail.com</li>
-        <li>081331211114</li>
+        <li>
+          <a href="daftar.html">Pendaftaran</a>
+        </li>
+        <li>
+          <a href="pengumuman.html">Pengumuman</a>
+        </li>
+        <li>
+          <a href="daftar_ulang.html">Daftar Ulang</a>
+        </li>
+        <li>
+          <a href="#kontak">Kontak</a>
+        </li>
       </ul>
-    </footer>
-  </body>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <div class="head">
+        <h1>Pengumuman Pendaftaran</h1>
+      </div>
+      <form action="/daftar_ulang.html" method="post">
+        <label for="no_daftar">No. Pendaftaran:</label>
+        <input type="number" id="no_daftar" name="no_daftar" placeholder="Masukkan nomor pendaftaran..." required
+          min="0" /><br /><br />
+        <label for="pin">PIN:</label>
+        <input type="text" id="pin" name="pin" placeholder="Masukkan pin pendaftaran..." required /><br /><br />
+
+        <button type="submit">Cek Hasil</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <h3 id="kontak">Informasi Madrasah</h3>
+    <ul>
+      <li>
+        Jl. Kendal II, Tritih Kulon, Kec. Cilacap Utara, Kabupaten Cilacap
+      </li>
+      <li>aljawamidigital@gmail.com</li>
+      <li>081331211114</li>
+    </ul>
+  </footer>
+</body>
+
 </html>
